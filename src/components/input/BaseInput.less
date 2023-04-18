@@ -1,0 +1,46 @@
+.base-input {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: rgb(16, 24, 40);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  caret-color: rgb(16, 24, 40);
+  outline: none;
+
+  // background
+  &.-background {
+    background-color: rgba(16, 24, 40, 0.05);
+  }
+
+  // size
+  &.-xsmall {
+    height: var(--size-xsmall);
+    padding: 4px 8px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &.-small {
+    height: var(--size-small);
+    padding: 6px 12px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &.-medium {
+    height: var(--size-medium);
+    min-width: var(--width-medium);
+    padding: 0 12px;
+  }
+}
